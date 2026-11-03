@@ -30,15 +30,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <style>{`
-html {
-  font-family: ${sourceSans.style.fontFamily};
-  --font-playfair: ${playfair.variable};
-  --font-source-sans: ${sourceSans.variable};
-}
-        `}</style>
-      </head>
       <body className={`${playfair.variable} ${sourceSans.variable} antialiased font-sans`}>{children}</body>
     </html>
   )
